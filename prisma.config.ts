@@ -1,17 +1,13 @@
-﻿import { defineConfig, env } from "prisma/config";
+import dotenv from "dotenv";
 
-export default defineConfig({
+dotenv.config({ path: ".env.local" });
+
+export default {
   schema: "prisma/schema.prisma",
-
   migrations: {
     path: "prisma/migrations",
   },
-
   datasource: {
-    url: env("DATABASE_URL"),
+    url: process.env.DATABASE_URL,
   },
-
-  skills: {
-    agents: ["claude", "cursor", "agents", "devin"],
-  },
-});
+};
