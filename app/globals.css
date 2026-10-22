@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.breaking-ticker { animation: breakingTicker 22s linear infinite; }
+@keyframes breakingTicker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+/* THE PUBLIC SAMACHAR - MOBILE HERO HIDE */
+@media (max-width: 1023px) {
+  #home-hero {
+    display: none !important;
+  }
+}

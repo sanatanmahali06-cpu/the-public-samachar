@@ -1,0 +1,1 @@
+ALTER TABLE "News" ADD COLUMN "bannerImageUrl" TEXT, ADD COLUMN "bannerAffiliateUrl" TEXT;
