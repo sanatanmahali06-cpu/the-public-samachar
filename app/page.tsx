@@ -856,6 +856,7 @@ const categorySlugMap: Record<string, string> = {
               <a href="/terms" className="rounded-full border border-slate-800 bg-slate-900 px-3 py-2 transition hover:border-red-500/60 hover:bg-red-950/40 hover:text-white">Terms</a>
               <a href="/contact" className="rounded-full border border-slate-800 bg-slate-900 px-3 py-2 transition hover:border-red-500/60 hover:bg-red-950/40 hover:text-white">Contact</a>
               <a href="/disclaimer" className="rounded-full border border-slate-800 bg-slate-900 px-3 py-2 transition hover:border-red-500/60 hover:bg-red-950/40 hover:text-white">Disclaimer</a>
+              <a href="/advertise" className="rounded-full border border-slate-800 bg-slate-900 px-3 py-2 transition hover:border-red-500/60 hover:bg-red-950/40 hover:text-white">विज्ञापन के लिए संपर्क करें</a>
               <a href="/all-news" className="rounded-full border border-slate-800 bg-slate-900 px-3 py-2 transition hover:border-red-500/60 hover:bg-red-950/40 hover:text-white">{"\u0938\u092d\u0940 \u0916\u092c\u0930\u0947\u0902"}</a>
             </nav>
 
