@@ -137,31 +137,22 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* HOME PAGE TOP HEADER */}
       <div className="mx-auto flex w-full max-w-7xl min-w-0 items-center justify-between gap-1 px-1 py-2.5 sm:gap-4 sm:px-4 sm:py-3">
-        <div className="flex shrink-0 flex-col items-start ml-1 md:hidden">
-          <button
-            type="button"
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="px-0 py-0 text-2xl font-bold leading-none text-red-600"
-            aria-label="Menu"
-          >
-            ☰
-          </button>
-        </div>
-
-        <a href="/" className="min-w-0 flex-1 ml-0 text-left sm:ml-0 sm:flex-none sm:text-left">
-          <div className="flex min-w-0 items-center justify-center gap-0.5 translate-x-0 sm:translate-x-3">
+      <a href="/" className="min-w-0 flex-1 ml-0 text-left sm:ml-0 sm:flex-none sm:text-left">
+          <div className="flex min-w-0 items-center justify-start gap-1">
             <img
               src="/logo.png"
               alt="THE PUBLIC SAMACHAR"
               className="h-9 w-9 shrink-0 translate-y-1 rounded-full border-2 border-red-600 object-cover shadow-sm sm:h-12 sm:w-12"
             />
-            <h1 className="truncate text-[18px] font-black tracking-tight text-red-600 sm:text-2xl">
-              THE PUBLIC {"\u0938\u092e\u093e\u091a\u093e\u0930"}
-            </h1>
+            <div className="min-w-0">
+              <h1 className="truncate text-[15px] font-black tracking-tight text-red-600 sm:text-2xl">
+                THE PUBLIC {"\u0938\u092e\u093e\u091a\u093e\u0930"}
+              </h1>
+              <p className="mt-0.5 text-center text-[10px] font-medium text-slate-500 sm:text-base">
+                {"\u0938\u091a \u0915\u0940 \u0916\u092c\u0930, \u0938\u092c\u0938\u0947 \u092a\u0939\u0932\u0947"}
+              </p>
+            </div>
           </div>
-          <p className="mt-0.5 translate-x-4 text-center text-base font-medium text-slate-500 sm:translate-x-7">
-            {"\u0938\u091a \u0915\u0940 \u0916\u092c\u0930, \u0938\u092c\u0938\u0947 \u092a\u0939\u0932\u0947"}
-          </p>
         </a>
 
         <div className="hidden flex-1 justify-center md:flex">
@@ -176,7 +167,7 @@ export default function SiteHeader() {
 
 
 
-        <div className="ml-1 flex shrink-0 items-center gap-1 md:hidden">
+        <div className="ml-1 flex shrink-0 items-center gap-2 md:hidden">
           <a
             href="/#newsletter"
             aria-label="News notifications"
@@ -191,6 +182,14 @@ export default function SiteHeader() {
           >
             Subscribe
           </a>
+          <button
+            type="button"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="shrink-0 px-0 py-0 text-2xl font-bold leading-none text-red-600"
+            aria-label="Menu"
+          >
+            ☰
+          </button>
         </div>
 
         <div className="hidden shrink-0 items-center gap-3 md:flex">
