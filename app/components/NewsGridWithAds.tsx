@@ -101,11 +101,12 @@ export default function NewsGridWithAds({
                   पढ़ें →
                 </a>
 
-                <ShareButtons
-                  slug={String(item.id)}
-                  compact
-                  mobileButtonOnly
-                />
+                <div className="hidden sm:block">
+                  <ShareButtons
+                    slug={String(item.id)}
+                    compact
+                  />
+                </div>
               </div>
             </div>
           </article>
