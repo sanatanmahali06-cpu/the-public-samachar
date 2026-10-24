@@ -210,7 +210,7 @@ export default async function NewsArticle({
                 loading="lazy"
               />
               <span className="absolute bottom-3 right-3 rounded-full border-2 border-white bg-yellow-400 px-4 py-2 text-sm font-black tracking-wide text-red-700 shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-yellow-300">
-                BUY NOW â†’
+                BUY NOW →
               </span>
             </div>
           </a>
