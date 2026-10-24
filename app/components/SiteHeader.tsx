@@ -136,7 +136,7 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* HOME PAGE TOP HEADER */}
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-1 px-2 py-2.5 sm:gap-4 sm:px-4 sm:py-3">
+      <div className="mx-auto flex w-full max-w-7xl min-w-0 items-center justify-between gap-1 px-1 py-2.5 sm:gap-4 sm:px-4 sm:py-3">
         <div className="flex shrink-0 flex-col items-start -ml-1 md:hidden">
           <button
             type="button"
@@ -148,14 +148,14 @@ export default function SiteHeader() {
           </button>
         </div>
 
-        <a href="/" className="min-w-0 flex-none ml-1 text-left sm:ml-0 sm:flex-none sm:text-left">
-          <div className="flex items-center justify-center gap-0.5 translate-x-0 sm:translate-x-3">
+        <a href="/" className="min-w-0 flex-1 ml-0 text-left sm:ml-0 sm:flex-none sm:text-left">
+          <div className="flex min-w-0 items-center justify-center gap-0.5 translate-x-0 sm:translate-x-3">
             <img
               src="/logo.png"
               alt="THE PUBLIC SAMACHAR"
               className="h-9 w-9 shrink-0 translate-y-1 rounded-full border-2 border-red-600 object-cover shadow-sm sm:h-12 sm:w-12"
             />
-            <h1 className="truncate text-[24px] font-black tracking-tight text-red-600 sm:text-2xl">
+            <h1 className="truncate text-[18px] font-black tracking-tight text-red-600 sm:text-2xl">
               THE PUBLIC {"\u0938\u092e\u093e\u091a\u093e\u0930"}
             </h1>
           </div>
@@ -176,7 +176,7 @@ export default function SiteHeader() {
 
 
 
-        <div className="flex shrink-0 items-center gap-2 md:hidden">
+        <div className="ml-1 flex shrink-0 items-center gap-1 md:hidden">
           <a
             href="/#newsletter"
             aria-label="News notifications"
