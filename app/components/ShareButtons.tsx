@@ -42,14 +42,14 @@ export default function ShareButtons({
   };
 
   const iconClass = compact
-    ? "flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white"
+    ? "flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full text-white"
     : "flex h-8 w-8 items-center justify-center rounded-full text-white";
 
   return (
     <div
       className={
         compact
-          ? "flex w-max max-w-full min-w-0 flex-nowrap items-center gap-1"
+          ? "flex w-full max-w-full min-w-0 flex-nowrap items-center gap-px overflow-hidden"
           : "mx-auto mt-6 flex w-full max-w-full -translate-x-2 flex-wrap items-center justify-center gap-1.5 border-y border-slate-200 px-1 py-4 sm:mt-8 sm:gap-2 sm:px-0 sm:py-5"
       }
     >
@@ -114,7 +114,7 @@ export default function ShareButtons({
         onClick={share}
         className={
           compact
-            ? "flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-900 p-0 text-white shadow-sm hover:bg-slate-700"
+            ? "flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-900 p-0 text-white shadow-sm hover:bg-slate-700"
             : "flex h-8 items-center gap-1.5 rounded-full bg-slate-900 px-3 text-xs font-bold text-white shadow-sm hover:bg-slate-700"
         }
       >
