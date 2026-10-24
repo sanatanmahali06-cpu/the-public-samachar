@@ -651,10 +651,10 @@ export default function AdminPage() {
                   })}
                 </div>
               </div>
-              <div className="mt-8 rounded-2xl bg-white p-6 shadow-sm">
-                <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="mt-8 min-w-0 max-w-full overflow-hidden rounded-2xl bg-white p-3 shadow-sm sm:p-6">
+                <div className="flex min-w-0 flex-wrap items-center justify-between gap-3">
                   <div>
-                    <h3 id="latest-news" className="text-xl font-black">
+                    <h3 id="latest-news" className="break-words text-xl font-black">
                       Latest News
                     </h3>
                     <p className="mt-1 text-sm font-semibold text-slate-500">
@@ -664,7 +664,7 @@ export default function AdminPage() {
 
                   <a
                     href="/admin/news"
-                    className="rounded-xl bg-red-600 px-5 py-3 font-black text-white hover:bg-red-700"
+                    className="shrink-0 rounded-xl bg-red-600 px-4 py-3 font-black text-white hover:bg-red-700 sm:px-5"
                   >
                     + Add News
                   </a>
