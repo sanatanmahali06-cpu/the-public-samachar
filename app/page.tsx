@@ -704,10 +704,10 @@ const categorySlugMap: Record<string, string> = {
                       "The Public Samachar की ताजा जानकारी पढ़ें।"}
                   </p>
 
-                  <div className="mt-4 flex min-w-0 flex-wrap items-center justify-between gap-2">
+                  <div className="mt-4 flex min-w-0 flex-nowrap items-center justify-center gap-3">
   <a
     href={readLink(item)}
-    className="font-bold text-red-600 hover:underline"
+    className="shrink-0 whitespace-nowrap text-xs font-bold text-red-600 hover:underline sm:text-sm"
   >
     पूरी खबर पढ़ें →
   </a>
@@ -802,10 +802,10 @@ const categorySlugMap: Record<string, string> = {
                       "बिहार की ताजा और महत्वपूर्ण खबरें The Public Samachar पर पढ़ें।"}
                   </p>
 
-                  <div className="mt-4 flex min-w-0 flex-wrap items-center justify-between gap-2">
+                  <div className="mt-4 flex min-w-0 flex-nowrap items-center justify-center gap-3">
   <a
     href={readLink(item)}
-    className="font-bold text-red-600 hover:underline"
+    className="shrink-0 whitespace-nowrap text-xs font-bold text-red-600 hover:underline sm:text-sm"
   >
     पूरी खबर पढ़ें →
   </a>

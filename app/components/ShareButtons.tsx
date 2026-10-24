@@ -41,15 +41,17 @@ export default function ShareButtons({
     }
   };
 
-  const iconClass = compact
-    ? "flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-white"
-    : "flex h-8 w-8 items-center justify-center rounded-full text-white";
+  const iconClass = mobileButtonOnly
+    ? "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-white"
+    : compact
+      ? "flex h-4 w-4 sm:h-5 sm:w-5 shrink-0 items-center justify-center rounded-full text-white"
+      : "flex h-8 w-8 items-center justify-center rounded-full text-white";
 
   return (
     <div
       className={
         compact
-          ? "flex w-full max-w-full min-w-0 flex-nowrap items-center gap-px overflow-hidden"
+          ? "mx-auto flex w-fit max-w-full min-w-0 flex-nowrap items-center justify-center gap-px overflow-hidden"
           : "mx-auto mt-6 flex w-full max-w-full -translate-x-2 flex-wrap items-center justify-center gap-1.5 border-y border-slate-200 px-1 py-4 sm:mt-8 sm:gap-2 sm:px-0 sm:py-5"
       }
     >
@@ -113,9 +115,11 @@ export default function ShareButtons({
         type="button"
         onClick={share}
         className={
-          compact
-            ? "flex h-5 w-5 sm:h-7 sm:w-7 shrink-0 items-center justify-center rounded-full bg-slate-900 p-0 text-white shadow-sm hover:bg-slate-700"
-            : "flex h-8 items-center gap-1.5 rounded-full bg-slate-900 px-3 text-xs font-bold text-white shadow-sm hover:bg-slate-700"
+          mobileButtonOnly
+            ? "flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-900 p-0 text-white shadow-sm hover:bg-slate-700"
+            : compact
+              ? "flex h-5 w-5 sm:h-7 sm:w-7 shrink-0 items-center justify-center rounded-full bg-slate-900 p-0 text-white shadow-sm hover:bg-slate-700"
+              : "flex h-8 items-center gap-1.5 rounded-full bg-slate-900 px-3 text-xs font-bold text-white shadow-sm hover:bg-slate-700"
         }
       >
         <FiShare2 className="text-sm" />
