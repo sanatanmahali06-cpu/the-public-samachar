@@ -49,7 +49,7 @@ export default function ShareButtons({
     <div
       className={
         compact
-          ? "flex max-w-full min-w-0 flex-wrap items-center gap-1"
+          ? "flex w-max max-w-full min-w-0 flex-nowrap items-center gap-1"
           : "mx-auto mt-6 flex w-full max-w-full -translate-x-2 flex-wrap items-center justify-center gap-1.5 border-y border-slate-200 px-1 py-4 sm:mt-8 sm:gap-2 sm:px-0 sm:py-5"
       }
     >

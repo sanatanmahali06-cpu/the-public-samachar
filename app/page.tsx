@@ -253,8 +253,8 @@ const categorySlugMap: Record<string, string> = {
 
           </div>
 
-          <a href="/" className="min-w-0 flex-none ml-1 text-left sm:ml-0 sm:flex-none sm:text-left">
-            <div className="flex items-center justify-center gap-0.5 translate-x-0 sm:translate-x-3"><img src="/logo.png" alt="THE PUBLIC समाचार" className="h-9 w-9 shrink-0 translate-y-1 rounded-full border-2 border-red-600 object-cover shadow-sm sm:h-12 sm:w-12" /><h1 className="truncate text-[24px] font-black tracking-tight text-red-600 sm:text-2xl">
+          <a href="/" className="min-w-0 flex-1 ml-1 overflow-hidden text-left sm:ml-0 sm:flex-none sm:text-left">
+            <div className="flex items-center justify-center gap-0.5 translate-x-0 sm:translate-x-3"><img src="/logo.png" alt="THE PUBLIC समाचार" className="h-9 w-9 shrink-0 translate-y-1 rounded-full border-2 border-red-600 object-cover shadow-sm sm:h-12 sm:w-12" /><h1 className="truncate text-[18px] font-black tracking-tight text-red-600 sm:text-2xl">
               THE PUBLIC समाचार
             </h1></div>
 
@@ -293,7 +293,7 @@ const categorySlugMap: Record<string, string> = {
             </a>
             <a
               href="#newsletter"
-              className="rounded-md bg-red-600 px-2 py-1 text-[11px] font-bold text-white hover:bg-red-700"
+              className="shrink-0 whitespace-nowrap rounded-md bg-red-600 px-1.5 py-1 text-[10px] font-bold text-white hover:bg-red-700 sm:px-2 sm:text-[11px]"
             >
               Subscribe
             </a>
