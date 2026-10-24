@@ -274,7 +274,7 @@ const categorySlugMap: Record<string, string> = {
 
 
 
-          <div className="flex shrink-0 items-center gap-2 md:hidden">
+          <div className="flex min-w-0 shrink items-center gap-1 sm:gap-2 md:hidden">
             <a
               href="#"
               onClick={(event) => {
