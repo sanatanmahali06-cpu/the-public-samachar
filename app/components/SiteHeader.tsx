@@ -187,7 +187,7 @@ export default function SiteHeader() {
           </a>
           <a
             href="/#newsletter"
-            className="rounded-md bg-red-600 px-2 py-1 text-[11px] font-bold text-white hover:bg-red-700"
+            className="shrink-0 whitespace-nowrap rounded-md bg-red-600 px-1.5 py-1 text-[10px] font-bold text-white hover:bg-red-700"
           >
             Subscribe
           </a>
