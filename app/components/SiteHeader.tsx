@@ -137,7 +137,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* HOME PAGE TOP HEADER */}
       <div className="mx-auto flex w-full max-w-7xl min-w-0 items-center justify-between gap-1 px-1 py-2.5 sm:gap-4 sm:px-4 sm:py-3">
-        <div className="flex shrink-0 flex-col items-start -ml-1 md:hidden">
+        <div className="flex shrink-0 flex-col items-start ml-1 md:hidden">
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
