@@ -15,6 +15,7 @@ type NewsItem = {
   status?: string;
   isBreaking?: boolean;
   createdAt?: string;
+  views?: number;
 };
 
 type CountData = {
@@ -679,9 +680,11 @@ export default function AdminPage() {
                       <thead>
                         <tr className="border-b text-sm text-slate-500">
                           <th className="px-3 py-3">Title</th>
+                          <th className="px-3 py-3">Date</th>
                           <th className="px-3 py-3">Category</th>
                           <th className="px-3 py-3">Status</th>
                           <th className="px-3 py-3">Breaking</th>
+                          <th className="px-3 py-3">&#128065; Views</th>
                         </tr>
                       </thead>
 
@@ -693,6 +696,12 @@ export default function AdminPage() {
                           >
                             <td className="px-3 py-4 font-bold">
                               {item.title}
+                            </td>
+
+                            <td className="whitespace-nowrap px-3 py-4 text-sm text-slate-600">
+                              {item.createdAt
+                                ? new Date(item.createdAt).toLocaleDateString("en-IN")
+                                : "-"}
                             </td>
 
                             <td className="px-3 py-4">
@@ -716,6 +725,10 @@ export default function AdminPage() {
 
                             <td className="px-3 py-4">
                               {item.isBreaking ? "YES" : "NO"}
+                            </td>
+
+                            <td className="whitespace-nowrap px-3 py-4 font-bold text-slate-700">
+                              &#128065; {item.views ?? 0} Views
                             </td>
                           </tr>
                         ))}
